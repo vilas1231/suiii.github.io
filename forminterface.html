@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title> REGISTRATION PAGE</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <script src="form.js"></script>
+    </head>
+    <body>
+        <center>
+        <div class="container">
+            <div class="main">
+                <h2 >ENTER THE DETAILS</h2>
+                <form id="form_id" method="post" name="myform"> 
+                    <label class="v">First Name:</label>
+                    <input type="text" name="firstname" placeholder="Enter firstname" id="firstname"/><br>
+                    <b  style="color:brown; font-size: small;" id="x1"></b><br>
+
+                    <label class="v">Middle Name:</label>
+                    <input type="text"  name="middlename" placeholder="Enter middlename" id="middlename"/><br>
+                    <b style="color:brown; font-size: small;" id="x2"></b><br>
+                    
+                    <label class="v">Last Name:</label>
+                    <input type="text" placeholder="Enter Lastname" name="lastname" id="lastname"/><br>
+                    <b style="color:brown; font-size: small;" id="x3"></b><br>
+                    
+                    <label class="v">Course</label>
+                    <select class="v" name="course"  id="course" >
+                        <option value></option>
+                        <option value="CS">CS</option>
+                        <option value="ME">ME</option>
+                        <option value="PT">PT</option>
+                        <option value="CE">CE</option>
+                        </select><br><br>
+
+                        <label class="v">Gender:</label>
+                              <input type="radio" id="Male" name="Gender" >M
+                              <input type="radio" id="Female" name="Gender" >F
+                              <input type="radio" id="Others" name="Gender" >Others<br><br>
+                        
+                            <label class="v" >Phone:</label>
+                        <input type="tel" placeholder="Enter Phonenumber" id="phone" name="phone"><br>
+                        <b style="color:brown; font-size: small;" id="x4"></b><br>
+
+                        <label class="v">Address</label><br>
+                        <textarea placeholder="Address" id="address" cols="30" rows="5"></textarea><br>
+                        <b style="color:brown; font-size: small;" id="x5"></b><br>
+                        <!-- <input type="text" placeholder="Address" id="address" name="address"> <br><br> -->
+                        <label class="v">Email</label>
+                        <input type="text" placeholder="Enter E-Mail" id="email" name="email"><br>
+                        <b style="color:brown; font-size: small;" id="x6"></b><br>
+                        <label class="v">Password:</label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password1"/><br>
+                    <b style="color:brown; font-size: small;" id="x7"></b><br>
+
+                    <label class="v">Re-enter password:</label>
+                    <input type="password" placeholder="Re-Enter password" name="re-enterpassword" id="password2"/><br>
+                    <b style="color:brown; font-size: small;" id="x8"></b><br>
+                    <input type="button" value="Submit" id="submit" onclick="verify()"/>
+                    <input type="button" value="RESET" id="RESET" onclick="verify()"/>
+                </form>
+            </div>
+        </div>
+    </center>
+    </body>
+
+</html>
